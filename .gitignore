@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -26,7 +24,19 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
 .vercel
+
+# lock files
+yarn.lock
+package-lock.json
+
+# temp files
+tmp/*
+!tmp/.gitkeep
+
+# csv files
+.csv
