@@ -22,6 +22,10 @@ export const Content = styled.header`
     margin-left: 5rem;
     height: 5rem;
   }
+
+  button {
+    margin-left: auto;
+  }
 `;
 
 export const MenuLink = styled.a<MenuLinkProps>`
