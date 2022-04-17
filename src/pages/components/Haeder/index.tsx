@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import Image from 'next/image';
-import { Container, Content } from './styles';
+import { Container, Content, MenuLink } from './styles';
 
 export function Header(): ReactElement {
   return (
@@ -8,8 +8,8 @@ export function Header(): ReactElement {
       <Content>
         <Image src='/images/logo.svg' height={31} width={110} alt='ig.news' />
         <nav>
-          <a>Home</a>
-          <a>Posts</a>
+          <MenuLink active>Home</MenuLink>
+          <MenuLink>Posts</MenuLink>
         </nav>
       </Content>
     </Container>
