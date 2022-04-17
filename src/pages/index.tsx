@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Container, Hero } from './styles';
-import { SubscribeButton } from './components/SubscribeButton';
+import { SubscribeButton } from '../_components/SubscribeButton';
 
 export default function Home(): ReactElement {
   return (
