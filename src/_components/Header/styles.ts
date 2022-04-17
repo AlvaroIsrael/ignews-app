@@ -58,3 +58,10 @@ export const MenuLink = styled.a<MenuLinkProps>`
     background: var(--yellow-500);
   }
 `;
+
+export const Logo = styled.div`
+  width: 110px;
+  height: 31px;
+  position: relative;
+  align-self: center;
+`;
