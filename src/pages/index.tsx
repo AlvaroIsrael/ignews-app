@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Container, Hero } from './styles';
+import { Avatar, Container, Hero } from './styles';
 import { SubscribeButton } from '../_components/SubscribeButton';
 
 export default function Home(): ReactElement {
@@ -22,7 +22,9 @@ export default function Home(): ReactElement {
           </p>
           <SubscribeButton />
         </Hero>
-        <Image src='/images/avatar.svg' alt='avatar' width={336} height={521} />
+        <Avatar>
+          <Image src='/images/avatar.svg' alt='avatar' layout='fill' priority />
+        </Avatar>
       </Container>
     </>
   );

@@ -46,3 +46,10 @@ export const Hero = styled.section`
     margin-top: 2.5rem;
   }
 `;
+
+export const Avatar = styled.div`
+  width: 336px;
+  height: 521px;
+  position: relative;
+  align-self: center;
+`;
