@@ -6,5 +6,9 @@ type SubscribeButtonProps = {
 };
 
 export function SubscribeButton({ priceId }: SubscribeButtonProps): ReactElement {
-  return <Button type='button'>Subscribe now</Button>;
+  return (
+    <Button type='button' id={priceId}>
+      Subscribe now
+    </Button>
+  );
 }
