@@ -1,6 +1,14 @@
 import { ReactElement } from 'react';
 import { Button } from './styles';
 
-export function SubscribeButton(): ReactElement {
-  return <Button type='button'>Subscribe now</Button>;
+type SubscribeButtonProps = {
+  priceId: string;
+};
+
+export function SubscribeButton({ priceId }: SubscribeButtonProps): ReactElement {
+  return (
+    <Button type='button' id={priceId}>
+      Subscribe now
+    </Button>
+  );
 }
