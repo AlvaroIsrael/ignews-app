@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   },
-  pageExtensions: ['jsx', 'tsx']
+  pageExtensions: ['ts', 'js', 'jsx', 'tsx'],
 };
 
 module.exports = nextConfig;
