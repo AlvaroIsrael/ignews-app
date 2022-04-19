@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetStaticProps } from 'next';
-import { Avatar, Container, Hero } from './styles';
+import { Avatar, Container, Hero } from '../styles/Home/styles';
 import { SubscribeButton } from '../components/SubscribeButton';
 import { stripe } from '../services/stripe';
 
