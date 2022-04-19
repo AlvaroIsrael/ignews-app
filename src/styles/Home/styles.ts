@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.main`
   max-width: 1120px;
@@ -52,4 +52,48 @@ export const Avatar = styled.div`
   height: 521px;
   position: relative;
   align-self: center;
+`;
+
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+export const Copyright = styled.footer`
+  width: 100vw;
+  text-align: center;
+  animation: ${appearFromLeft} 1s;
+
+  a {
+    color: #ffffff;
+
+    :link {
+      text-decoration: none;
+    }
+
+    :visited {
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    :hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    :active {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  margin-bottom: 50px;
+  position: absolute;
+  bottom: 0;
 `;

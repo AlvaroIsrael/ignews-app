@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetStaticProps } from 'next';
-import { Avatar, Container, Hero } from '../styles/Home/styles';
+import { Avatar, Container, Hero, Copyright } from '../styles/Home/styles';
 import { SubscribeButton } from '../components/SubscribeButton';
 import { stripe } from '../services/stripe';
 
@@ -11,9 +11,10 @@ type HomeProps = {
     priceId: string;
     amount: string;
   };
+  currentYear: number;
 };
 
-export default function Home({ product }: HomeProps): ReactElement {
+export default function Home({ product, currentYear }: HomeProps): ReactElement {
   return (
     <>
       <Head>
@@ -35,11 +36,19 @@ export default function Home({ product }: HomeProps): ReactElement {
           <Image src='/images/avatar.svg' alt='avatar' layout='fill' priority />
         </Avatar>
       </Container>
+      <Copyright>
+        ❤️&nbsp;
+        <a href='https://github.com/AlvaroIsrael/ignews-app'>
+          <strong>Álvaro Israel Nunes Leite</strong>
+        </a>
+        &nbsp;&copy; {currentYear}
+      </Copyright>
     </>
   );
 }
 
 export const getStaticProps: GetStaticProps = async (): Promise<{ props: HomeProps; revalidate: number }> => {
+  const currentYear = new Date().getFullYear();
   const price = await stripe.prices.retrieve(process.env.STRIPE_PRICE_ID || '', {
     expand: ['product'],
   });
@@ -55,6 +64,7 @@ export const getStaticProps: GetStaticProps = async (): Promise<{ props: HomePro
   return {
     props: {
       product,
+      currentYear,
     },
     revalidate: 60 * 60 * 24, // 24 hours
   };
