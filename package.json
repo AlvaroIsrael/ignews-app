@@ -17,10 +17,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": {
-    "node": "16.13.0",
-    "npm": "8.1.0"
-  },
   "dependencies": {
     "axios": "^0.26.1",
     "next": "12.1.5",
