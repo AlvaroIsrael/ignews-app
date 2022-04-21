@@ -8,6 +8,13 @@
 <div align="center">
 
 [![CodeQLCI](https://github.com/AlvaroIsrael/ignews-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/AlvaroIsrael/ignews-app/actions/workflows/codeql-analysis.yml)
+[![GitHub license](https://img.shields.io/github/license/AlvaroIsrael/ignews-app)](https://img.shields.io/github/license/AlvaroIsrael/ignews-app)
+[![GitHub repo size](https://img.shields.io/github/repo-size/AlvaroIsrael/ignews-app)](https://img.shields.io/github/repo-size/AlvaroIsrael/ignews-app)
+[![GitHub stars](https://img.shields.io/github/stars/AlvaroIsrael/ignews-app)](https://img.shields.io/github/stars/AlvaroIsrael/ignews-app)
+[![GitHub forks](https://img.shields.io/github/forks/AlvaroIsrael/ignews-app)](https://img.shields.io/github/forks/AlvaroIsrael/ignews-app)
+[![GitHub issues](https://img.shields.io/github/issues/AlvaroIsrael/ignews-app)](https://img.shields.io/github/issues/AlvaroIsrael/ignews-app)
+[![GitHub contributors](https://img.shields.io/github/contributors/AlvaroIsrael/ignews-app)](https://img.shields.io/github/contributors/AlvaroIsrael/ignews-app)
+[![GitHub last commit](https://img.shields.io/github/last-commit/AlvaroIsrael/ignews-app)](https://img.shields.io/github/last-commit/AlvaroIsrael/ignews-app)
 
 > 📰 A simple typescript news platform!
 
@@ -89,8 +96,11 @@ Resources:
 - Read more about how to open a Pull Request from [GitHub official documentation][].
 
 [fork]: https://github.com/AlvaroIsrael/ignews-app/fork
+
 [Pull Requests]: https://github.com/AlvaroIsrael/ignews-app/pulls
+
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
+
 [GitHub official documentation]: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 
 ## 📝 License
