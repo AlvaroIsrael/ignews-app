@@ -4,12 +4,12 @@ type MenuLinkProps = {
   active?: boolean;
 };
 
-export const Container = styled.div`
+export const Container = styled.header`
   height: 5rem;
   border-bottom: 1px solid var(--gray-800);
 `;
 
-export const Content = styled.header`
+export const Content = styled.div`
   max-width: 1120px;
   height: 5rem;
   margin: 0 auto;
