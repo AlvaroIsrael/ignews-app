@@ -39,6 +39,7 @@ export default class MyDocument extends Document {
           <link rel='shortcut icon' href='/favicon.png' type='image/png' />
           <meta name='description' content='Get access to all the news about the React world.' />
           <meta name='keywords' content='news, react' />
+          <meta name='author' content='Alvaro Israel Nunes Leite' />
         </Head>
         <body>
           <Main />
