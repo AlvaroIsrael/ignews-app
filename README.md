@@ -64,7 +64,7 @@ $ cd ignews-app
 $ cd ignews-app
 
 # Install dependencies
-$ yarn install
+$ yarn install --ignore-engines
 
 # Build the app
 $ yarn build
