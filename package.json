@@ -19,11 +19,12 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@prismicio/client": "^6.4.3",
+    "@prismicio/client": "4.0.0",
     "@prismicio/helpers": "^2.3.0",
     "@prismicio/react": "^2.3.0",
     "@prismicio/slice-simulator-react": "^0.2.2",
     "axios": "^0.26.1",
+    "faunadb": "4.1.1",
     "next": "12.1.5",
     "next-auth": "3.15.0",
     "react": "18.0.0",
