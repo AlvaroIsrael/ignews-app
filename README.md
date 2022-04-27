@@ -47,6 +47,15 @@
 
 - Install [Git](https://git-scm.com).
 - Install [Node.js](https://nodejs.org/en/download/).
+- Install [Prismic](https://prismic.io).
+
+```bash
+# Replace the $PRISMIC_REPOSITORY_NAME with your Prismic repository name.
+$ npx --ignore-engines @slicemachine/init --repository $PRISMIC_REPOSITORY_NAME
+
+# Run the prismic server locally to be able to create posts.
+$ yarn run slicemachine
+```
 
 ### **Clone**
 
@@ -71,6 +80,15 @@ $ yarn build
 
 # Run the app
 $ yarn start
+```
+
+### **Environment Variables**
+
+```bash
+# You can use node-jose-tools to generate JWT_SECRET key on your local machine.
+$ npm install -g node-jose-tools
+$ jose newkey -s 256 -t oct -a HS512 > /some/path/to/private.key
+# You can use the newly generate key inside the private.key file ('k' field) as your JWT_SECRET environment variable.
 ```
 
 ## 🤝 Contributing
